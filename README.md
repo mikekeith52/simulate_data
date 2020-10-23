@@ -6,6 +6,6 @@ The new records were simulated with [SMOTE](https://imbalanced-learn.readthedocs
 
 Finally, the variable "sales" is added to the dataset, which can be average sales from a company in a county for a given set of months. This variable is a linear combination of the other variables (all weights assigned through trial and error until the author liked the outcome) with a random error applied to it. Sales that are lower than a certain amount are lifted up so that a small peak exists on the variable's left tail, making its distribution somewhat bimodal. This is done so that more advanced regression techniques, such as neural network, can predict the outcome better than linear regression, which likes normal distributions.  
 
-The two resulting datasets, new.csv and existing.csv, are random draws from the created dataset of about 7,000 and 21,000 obserations respectively. A random county_id variable is added to both. The sales variable is dropped from existing, meaning it can be a new dataset used to make predictions on unknown data.  
+The two resulting datasets, new.csv and existing.csv, are random draws from the created dataset of about 7,000 and 21,000 obserations respectively. A random county_id variable is added to both. The sales variable is dropped from new.csv.
 
-This project is in service of another I am working on completing.
+This project was in service of one of my [Apress publications](https://github.com/mikekeith52/PythonRegression). Link to the video: [link](https://link.springer.com/video/10.1007/978-1-4842-6583-3).
